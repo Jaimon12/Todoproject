@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="card-title">Updation</h5>
+            <form method="POST"  class="p-3 mb-5 bg-light rounded shadow">
+                {% csrf_token %}
+                {{ form.as_p }}
+                <button type="submit" class="btn btn-danger">Confirm</button>
+            </form>
+{% endblock %}

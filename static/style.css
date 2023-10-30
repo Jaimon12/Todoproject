@@ -1,0 +1,32 @@
+.banner {
+    background-color: darkslateblue;
+    width: 100%;
+    height: 200px;
+    margin-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    overflow: hidden;
+}
+
+.banner:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0));
+}
+
+.banner-text {
+    color: white;
+    text-align: center;
+    font-size: 24px;
+    position: relative;
+    z-index: 1;
+}
+.body{
+    background-color: darkcyan;
+}

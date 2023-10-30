@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block content %}
+<div class="container">
+    <div class="card shadow">
+        <div class="card-body">
+            <h5 class="card-title">Confirm Task Deletion</h5>
+            <p class="card-text">Are you sure you finish the task ?</p>
+            <form method="POST"  class="p-3 mb-5 bg-light rounded shadow">
+                {% csrf_token %}
+                <button type="submit" class="btn btn-danger">Yes, Done</button>
+            </form>
+
+{% endblock %}
